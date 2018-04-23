@@ -59,4 +59,4 @@ class Reservation(models.Model):
     phone = models.CharField(max_length=10)
     partySize = models.IntegerField(validators=[MaxValueValidator(10), MinValueValidator(1)])
     dateOfRes = models.DateField()
-    time = models.DateTimeField(max_length=8, choices=TIMES)
+    time = models.TimeField(choices=TIMES)
