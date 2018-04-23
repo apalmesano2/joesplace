@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Joe's Place Pizza and Pasta</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../static/css/portfolio.css" type="text/css"/>
+</head>
+<body>
+<h1 id="title">Joe's Place Pizza and Pasta</h1>
+
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+
+            <!-- Collapsed Hamburger -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target=".navbar-collapse">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-center">
+                <li class="nav-item"><a href="{% url 'portfolio:home'%}">Home</a></li>
+                <li class="nav-item"><a href="{% url 'portfolio:menu'%}">Menu</a></li>
+                <li class="nav-item"><a href="{% url 'portfolio:specials'%}">Specials</a></li>
+                <li class="nav-item"><a href="{% url 'portfolio:catering'%}">Catering</a></li>
+                <li class="active nav-item"><a href="{% url 'portfolio:about_us'%}">About Us</a></li>
+                <li class="nav-item"><a href="{% url 'portfolio:contact_us'%}">Contact Us</a></li>
+                <li class="nav-item"><a href="{% url 'portfolio:events'%}">Fundraisers & Events</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<h2 class="page-header">About Us</h2>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title"></h3>
+    </div>
+    <div class="panel-body">
+        <h4>Celebrating 40 Years!<br>1978 - 2018</h4>
+        <p>
+            Joe's Place is more than just pizza and pasta - the Farruggio family has a rich history. Hailing Agrigento,
+            Italy before coming to the United States, the Farruggio's brought their Italian heritage and love of
+            authentic Sicilian flavors with them. The family's first restaurant opened in 1978. Today, they continue to
+            bring an authentic Italian experience to Arlington. Read on to learn more about the history of Joe's from
+            Joe himself - and join the family as they celebrate 40 years of success: thank you!
+        </p>
+        <h4>The History of Joe's by Joe Farruggio</h4>
+        <h5>History in the Making</h5>
+        <p>
+            Farruggio familyIn 1970, my family and I left our Sicilian home town of Agrigento, Italy and settled in New
+            York to pursue the American dream. With little money and hard work, we learned the art of making New
+            York-style pizza.
+        </p>
+        <p>
+            Then, we confirmed that America truly is the land of opportunity when we moved to Virginia and opened the
+            first Joe's Place in Bailey's Crossroads in 1978. With ongoing success, we opened additional restaurants,
+            and in 2007 consolidated our operations in the Arlington and Vienna locations so that our family members
+            could remain closely involved at each restaurant, and ensure the superior customer service we proudly
+            provide each day.
+        </p>
+        <h5>The Joe's You Know Today</h5>
+        <p>
+            Over time, we've developed a reputation for the best pizza in town, along with a warm, friendly atmosphere
+            and strong support for the community. Many of Joe's staff have been with us for 10, 20, even 30 years. They
+            and our many longtime regular customers truly are like family.
+        </p>
+        <p>
+            Most importantly, we continue to make all of our own Sicilian style pasta dishes, sauces, pizza and desserts
+            with recipes we brought from Italy, and through all we have learned in this great country. Our food is
+            prepared with love and care to be healthful, zesty and delicious.
+        </p>
+        <h5>From the Joe's Family</h5>
+        <p>
+            Our entire family, made up of myself and my sons Roberto, Enrico and Alessandro; his wife Rosa and children
+            Rosario and Gabriella; Rosabel and her husband Anthony and daughter Gemma; Calogero and his wife Maria;
+            Rosario, his wife Patricia and son Alessandro; Marisa and her husband Sami and daughter Sofia; Fortunato and
+            his wife Maria; Franco and his wife Anna and daughter Isabel; Federica and her husband Max and sons Adam and
+            Matteo, and all of our dedicated, hardworking staff welcome you and are very proud to serve you.
+        </p>
+        <p>
+            Thank you for your business and your friendship!
+        </p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Joe's Place Pizza and Pasta</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../static/css/portfolio.css" type="text/css"/>
+</head>
+<body>
+<h1 id="title">Joe's Place Pizza and Pasta</h1>
+
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+
+            <!-- Collapsed Hamburger -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target=".navbar-collapse">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-center">
+                <li class="nav-item"><a href="{% url 'portfolio:home'%}">Home</a></li>
+                <li class="nav-item"><a href="{% url 'portfolio:menu'%}">Menu</a></li>
+                <li class="active nav-item"><a href="{% url 'portfolio:specials'%}">Specials</a></li>
+                <li class="nav-item"><a href="{% url 'portfolio:catering'%}">Catering</a></li>
+                <li class="nav-item"><a href="{% url 'portfolio:about_us'%}">About Us</a></li>
+                <li class="nav-item"><a href="{% url 'portfolio:contact_us'%}">Contact Us</a></li>
+                <li class="nav-item"><a href="{% url 'portfolio:events'%}">Fundraisers & Events</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<h2 class="page-header">Specials</h2>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Sunday</h3>
+    </div>
+    <div class="panel-body">
+        <ul>
+            <li>
+                <strong>Lunch Buffet!</strong><br>11:00am-3:00pm<br>$9.95 all you can eat
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Monday</h3>
+    </div>
+    <div class="panel-body">
+        <ul>
+            <li>
+                <strong>Lunch Buffet!</strong><br>11:00am-3:00pm<br>$9.95 all you can eat
+            </li>
+            <li>All wine half price with purchase of an entree</li>
+            <li><strong>Dinner Buffet</strong><br>5:30pm-9:00pm<br>$12.00</li>
+        </ul>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Tuesday</h3>
+    </div>
+    <div class="panel-body">
+        <ul>
+            <li>
+                <strong>Lunch Buffet!</strong><br>11:00am-3:00pm<br>$9.95 all you can eat
+            </li>
+            <li><strong>Dinner Buffet</strong><br>5:30pm-9:00pm<br>$12.00</li>
+        </ul>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Wednesday</h3>
+    </div>
+    <div class="panel-body">
+        <ul>
+            <li>
+                <strong>Lunch Buffet!</strong><br>11:00am-3:00pm<br>$9.95 all you can eat
+            </li>
+            <li><strong>Dinner Buffet</strong><br>5:30pm-9:00pm<br>$12.00</li>
+        </ul>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Thursday</h3>
+    </div>
+    <div class="panel-body">
+        <ul>
+            <li>
+                <strong>Lunch Buffet!</strong><br>11:00am-3:00pm<br>$9.95 all you can eat
+            </li>
+            <li>
+                All beer 1/2 price with order of wings
+            </li>
+        </ul>
+
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Friday</h3>
+    </div>
+    <div class="panel-body">
+        <ul>
+            <li>
+                <strong>Lunch Buffet!</strong><br>11:00am-3:00pm<br>$9.95 all you can eat
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Saturday</h3>
+    </div>
+    <div class="panel-body">
+        <ul>
+            <li>
+                <strong>Lunch Buffet!</strong><br>11:00am-3:00pm<br>$9.95 all you can eat
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+
+body {
+    padding-left: 15px;
+}
+
+h1 a {
+    color: #FCA205;
+    font-family: 'cursive';
+}
+
+
+#title {
+    margin: 50px auto auto auto;
+    text-align: center;
+    font-size: 48pt;
+}
+
+#line {
+    border: black;
+}
+
+.home-table {
+    margin: 100px auto auto auto;
+}
+
+.button-container {
+    margin-right: 100px;
+}
+
+.home-btn {
+    height: 75px;
+    width: 275px;
+    padding-top: 20px;
+    font-size: 18pt;
+}
+
+.menu-table tr {
+    border: 3px solid black;
+}
+
+.menu-table {
+    margin: auto;
+}
+
+td, th {
+    padding-left: 15px;
+    width: auto;
+    font-size: 13pt;
+}
+
+th {
+    background-color: darkred;
+    color: white;
+}
+
+.desc {
+    font-size: 9pt;
+}
+
+.page-header {
+    margin: auto;
+    text-align: center;
+    font-size: 30pt;
+}
+
+.contact-list {
+    list-style-type: none;
+}
+
+.contact {
+    margin-bottom: 5px;
+}
+
+.second-panel {
+    height: 678px;
+}
+
+.mapouter{
+    overflow:hidden;
+    height:350px;
+    width:350px;
+}
+
+.gmap_canvas {
+    background:none!important;
+    height:350px;width:350px;
+}
+
+h4, .date-time-event {
+    text-align: center;
+}
+
+h4, h5 {
+    font-weight: bold;
+}
+
+#catering-menu {
+    margin: auto;
+}
+
+.catering-desc {
+    text-align: center;
+}
+
+.third-panel {
+    height: 590px;
+}
+
+.thanks {
+    margin: auto;
+}

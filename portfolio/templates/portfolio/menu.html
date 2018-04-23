@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Joe's Place Pizza and Pasta</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../static/css/portfolio.css" type="text/css"/>
+</head>
+<body>
+<h1 id="title">Joe's Place Pizza and Pasta</h1>
+
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+
+            <!-- Collapsed Hamburger -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target=".navbar-collapse">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-center">
+                <li class="nav-item"><a href="{% url 'portfolio:home'%}">Home</a></li>
+                <li class="active nav-item"><a href="{% url 'portfolio:menu'%}">Menu</a></li>
+                <li class="nav-item"><a href="{% url 'portfolio:specials'%}">Specials</a></li>
+                <li class="nav-item"><a href="{% url 'portfolio:catering'%}">Catering</a></li>
+                <li class="nav-item"><a href="{% url 'portfolio:about_us'%}">About Us</a></li>
+                <li class="nav-item"><a href="{% url 'portfolio:contact_us'%}">Contact Us</a></li>
+                <li class="nav-item"><a href="{% url 'portfolio:events'%}">Fundraisers & Events</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<h2 class="page-header">Menu<br>
+<a href="https://www.grubhub.com/restaurant/joes-place-pizza--pasta-5555-lee-hwy-arlington/69109">
+    <div class="btn btn-warning order-btn">Order Online</div>
+</a>
+</h2>
+<table class="menu-table">
+    <tr>
+        <th colspan="2">Appetizers & Sides</th>
+        <th colspan="2">Pizza</th>
+    </tr>
+    <tr>
+        <td>Bruschetta</td>
+        <td>5.00</td>
+        <td>Thin Crust Cheese Pizza</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Buffalo Wings</td>
+        <td>$9.00+</td>
+        <td>Sicilian Deep Dish Pizza<br>
+            <div class="desc">Ten slices</div>
+        </td>
+        <td>$16.00+</td>
+    </tr>
+    <tr>
+        <td>Calamari Fritti</td>
+        <td>$9.00</td>
+        <td>Pizzare Pizza<br>
+            <div class="desc">With house meat sauce and fresh mozzarella.</div>
+        </td>
+        <td>$13.00+</td>
+    </tr>
+    <tr>
+        <td>Mozarella Sticks</td>
+        <td>$5.00</td>
+        <td>Margherita Pizza<br>
+            <div class="desc">With tomato sauce, fresh basil and fresh mozzarella.</div>
+        </td>
+        <td>$12.00+</td>
+    </tr>
+    <tr>
+        <td>French Fries</td>
+        <td>$3.00</td>
+        <td>House Pizza<br>
+            <div class="desc">With pepperoni, mushrooms, black olives, sausage, tomato sauce and mozzarella.</div>
+        </td>
+        <td>$13.00</td>
+    </tr>
+    <tr>
+        <td>Caprese Salad<br>
+            <div class="desc">Fresh mozzarella, sliced tomato, olive oil and fresh basil</div>
+        </td>
+        <td>$7.00</td>
+        <td>Vegetable Pizza<br>
+            <div class="desc">With mushrooms, olives, green peppers,onions, tomato sauce and mozzarella.</div>
+        </td>
+        <td>$13.00</td>
+    </tr>
+    <tr>
+        <td>3 Meatball Appetizer</td>
+        <td>$5.00</td>
+        <td>Asiago Pizza<br>
+            <div class="desc">With mozzarella,asiago, grilled chicken, mushrooms and fresh basil.</div>
+        </td>
+        <td>$13.00+</td>
+    </tr>
+    <tr>
+        <td>Side of Sauce</td>
+        <td>$2.00</td>
+        <td>White Pizza<br>
+            <div class="desc">With mozzarella, fontina and garlic.</div>
+        </td>
+        <td>$10.00+</td>
+    </tr>
+    <tr>
+        <td>Great Garlic Bread</td>
+        <td>$4.00</td>
+        <td>Spring Pizza<br>
+            <div class="desc">With mozzarella, fontina and garlic.</div>
+        </td>
+        </td>
+        <td>$11.00+</td>
+    </tr>
+    <tr>
+        <td>Garlic Bread with Mozzarella Cheese</td>
+        <td>$5.00</td>
+        <td>Special Pizza<br>
+            <div class="desc">With pepperoni, sausage, mushrooms, olives, green peppers, onions, meatballs, ham and
+                extra mozzarella.
+            </div>
+        </td>
+        </td>
+        <td>$15.00+</td>
+    </tr>
+    <tr>
+        <td>1/2 Order of Pasta</td>
+        <td>$6.00</td>
+        <td>Seafood Pizza<br>
+            <div class="desc">With fresh shrimp, clams, onions, lite tomato sauce and lite mozzarella.</div>
+        </td>
+        </td>
+        <td>$14.00+</td>
+    </tr>
+    <tr>
+        <td>Chicken Fingers</td>
+        <td>$5.00</td>
+        <td>Small gluten-free 10" Pizza<br>
+            <div class="desc">With tomato sauce and mozzarella.</div>
+        </td>
+        </td>
+        <td>$11.00+</td>
+    </tr>
+    <tr>
+        <td>Mamma's Minestrone Soup</td>
+        <td>$5.00+</td>
+        <td></td>
+    </tr>
+    <tr>
+        <th colspan="2">Subs</th>
+        <th colspan="2">Calzones</th>
+    </tr>
+    <tr>
+        <td>The Italian Hero Hoagie<br>
+            <div class="desc">Italian hoagie with salami, prosciutto, capicollo, provolone cheese, green pepper,
+                lettuce, tomato, onion, and oil and vinegar. No mayo.
+            </div>
+        </td>
+        <td>$6.95+</td>
+        <td>The Original Calzone<br>
+            <div class="desc">With ham, ricotta and mozzarella.</div>
+        </td>
+        <td>$10.95+</td>
+    </tr>
+    <tr>
+        <td>The Italian Hero Hoagie<br>
+            <div class="desc">Italian hoagie with salami, prosciutto, capicollo, provolone cheese, green pepper,
+                lettuce, tomato, onion, and oil and vinegar. No mayo.
+            </div>
+        </td>
+        <td>$6.95+</td>
+        <td>Alla Carne Calzone<br>
+            <div class="desc">With pepperoni, sausage and mozzarella.</div>
+        </td>
+        <td>$10.95+</td>
+    </tr>
+    <tr>
+        <td>The Zep American Hoagie<br>
+            <div class="desc">American hoagie with ham, salami, provolone, green peppers, lettuce, tomato, mayo, onion,
+                oil and vinegar and oregano.
+            </div>
+        </td>
+        <td>$6.95+</td>
+       <td>4 Cheese Calzone<br>
+            <div class="desc">With mozzarella, ricotta, fontina and Romano.</div>
+        </td>
+        <td>$10.95+</td>
+    </tr>
+    <tr>
+        <td>Ham and Cheese Sub<br>
+            <div class="desc">With lettuce, tomato, mayo and onion.</div>
+        </td>
+        <td>$6.95+</td>
+        <td>Vegetable Calzone<br>
+            <div class="desc">With spinach, mushrooms, black olives and mozzarella.</div>
+        </td>
+        <td>$10.95+</td>
+    </tr>
+    <tr>
+        <td>Hot Veggie Sub<br>
+            <div class="desc">With provolone, mozzarella, fresh green peppers, mushrooms, lettuce, tomato, mayo and
+                onion.
+            </div>
+        </td>
+        <td>$6.95+</td>
+        <th colspan="2">Pasta</th>
+    </tr>
+    <tr>
+        <td>Meatball Parmigiana Sub<br>
+            <div class="desc">With melted provolone and tomato sauce.</div>
+        </td>
+        <td>$6.95+</td>
+        <td>Build Your Own Pasta<br>
+            <div class="desc">Choose your pasta, sauce, and optional add ons.</div>
+        </td>
+        <td>$12.00+</td>
+    </tr>
+    <tr>
+        <td>Caprese Sub<br>
+            <div class="desc"> Fresh mozzarella, tomatoes, fresh basil, oil and balsamic.</div>
+        </td>
+        <td>$7.50+</td>
+        <td>Lasagna Classica<br>
+            <div class="desc">With meat sauce, ricotta and fresh mozzarella.</div>
+        </td>
+        <td>$12.00+</td>
+    </tr>
+    <tr>
+        <td>Grilled Chicken Sub<br>
+            <div class="desc">With provolone, lettuce, tomato, mayo and onion.</div>
+        </td>
+        <td>$7.50+</td>
+        <td>Cheese Ravioli<br>
+            <div class="desc">With tomato sauce.</div>
+        </td>
+        <td>$12.00+</td>
+    </tr>
+    <tr>
+        <td>Veal Parmigiana Sub<br>
+            <div class="desc">Breaded cutlet, provolone and house tomato sauce.</div>
+        </td>
+        <td>$7.50+</td>
+        <td>Meat Ravioli<br>
+            <div class="desc">With tomato sauce.</div>
+        </td>
+        <td>$12.00+</td>
+    </tr>
+    <tr>
+        <td>Chicken Parmigiana Sub<br>
+            <div class="desc">Breaded cutlet, provolone and house tomato sauce.</div>
+        </td>
+        <td>$7.50+</td>
+        <td>Gnocchi<br>
+            <div class="desc">With tomato sauce, fresh basil and fresh mozzarella.</div>
+        </td>
+        <td>$12.00+</td>
+    </tr>
+    <tr>
+        <td>Eggplant Parmigiana Sub<br>
+            <div class="desc">With melted provolone and tomato sauce.</div>
+        </td>
+        <td>$7.50+</td>
+        <td>Baked Ziti<br>
+            <div class="desc">With penne, tomato sauce, ricotta and mozzarella.</div>
+        </td>
+        <td>$12.00+</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td>Chicken with Alfredo and Pasta<br>
+            <div class="desc">Choose your pasta, sauce, and optional add ons.</div>
+        </td>
+        <td>$12.00+</td>
+    </tr>
+    <tr>
+        <th colspan="2">Entrees
+            <div class="desc">Served with a side of spaghetti with tomato or meat sauce</div>
+        </th>
+        <th colspan="2">Desserts</th>
+    </tr>
+    <tr>
+        <td>Veal Parmigiana<br>
+            <div class="desc">Breaded cutlet, sauteed and baked.</div>
+        </td>
+        <td>$18.00</td>
+        <td>Cannoli<br>
+            <div class="desc"></div>
+        </td>
+        <td>$5.00</td>
+    </tr>
+    <tr>
+        <td>Chicken Parmigiana<br>
+            <div class="desc">Breaded cutlet, sauteed and baked.</div>
+        </td>
+        <td>$18.00</td>
+        <td>Chocolate Cake<br>
+            <div class="desc"></div>
+        </td>
+        <td>$5.00</td>
+    </tr>
+    <tr>
+        <td>Eggplant Parmigiana<br>
+            <div class="desc">Breaded cutlet, sauteed and baked.</div>
+        </td>
+        <td>$17.00</td>
+        <td>Tiramisu<br>
+            <div class="desc"></div>
+        </td>
+        <td>$5.00</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td>Mini Cannoli<br>
+            <div class="desc">Comes with 3 homemade mini cannolis</div>
+        </td>
+        <td>$5.00</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td>Lemon Blueberry Cheesecake<br>
+            <div class="desc"></div>
+        </td>
+        <td>$5.00</td>
+    </tr>
+    <tr>
+        <th colspan="4">Beverages</th>
+    </tr>
+    <tr>
+        <td>Sparkling Water</td>
+        <td>$3.00</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>1-Liter Soda</td>
+        <td>$2.00</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>2-Liter Soda</td>
+        <td>$3.50</td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
+</body>
+</html>

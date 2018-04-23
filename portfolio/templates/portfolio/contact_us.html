@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Joe's Place Pizza and Pasta</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../static/css/portfolio.css" type="text/css"/>
+</head>
+<body>
+<h1 id="title">Joe's Place Pizza and Pasta</h1>
+
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+
+            <!-- Collapsed Hamburger -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target=".navbar-collapse">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-center">
+                <li class="nav-item"><a href="{% url 'portfolio:home'%}">Home</a></li>
+                <li class="nav-item"><a href="{% url 'portfolio:menu'%}">Menu</a></li>
+                <li class="nav-item"><a href="{% url 'portfolio:specials'%}">Specials</a></li>
+                <li class="nav-item"><a href="{% url 'portfolio:catering'%}">Catering</a></li>
+                <li class="nav-item"><a href="{% url 'portfolio:about_us'%}">About Us</a></li>
+                <li class="active nav-item"><a href="{% url 'portfolio:contact_us'%}">Contact Us</a></li>
+                <li class="nav-item"><a href="{% url 'portfolio:events'%}">Fundraisers & Events</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<h2 class="page-header">Contact Us</h2>
+
+<div class="panel panel-default col-md-6 second-panel">
+    <div class="panel-heading">
+        <h3 class="panel-title">Contact Us</h3>
+    </div>
+    <div class="panel-body">
+        <p>Hours</p>
+        <ul class="contact-list">
+            <li>Every Day: 10:30AM - 10:00PM</li>
+        </ul>
+        <p>Phone</p>
+        <ul class="contact-list">
+            <li>(703) 995-1489</li>
+        </ul>
+        <p>Address</p>
+        <ul class="contact-list">
+            <li> 5555 Lee Hwy <br>
+                Arlington, VA 22207
+            </li>
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe width="350" height="350" id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=5555 Lee Hwy&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                </div>
+            </div>
+        </ul>
+    </div>
+</div>
+<div class="panel panel-default col-md-6">
+    <div class="panel-heading">
+        <h3 class="panel-title">Other</h3>
+    </div>
+    <div class="panel-body">
+        <h5>Dine with Us!</h5>
+        <ul class="contact-list">
+            <li>
+                <p>Make a reservation below!</p>
+                <form method="POST" class="res-form">{% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit" class="save btn btn-default">Submit</button>
+                </form>
+            </li>
+            <li>
+                <p> </p>
+                <a href="https://www.giftrocker.com/secure/Order/?h=261b7621" target="_blank">
+                    <div class="btn btn-warning contact">Buy a Gift Card with Gift Rocker</div>
+                </a>
+            </li>
+        </ul>
+
+        <h5>Find Us On Social Media!</h5>
+        <ul class="contact-list">
+            <li>
+                <a href="https://www.facebook.com/joesplacearlington/" target="_blank">
+                    <div class="btn btn-danger contact">Facebook</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/JoesPlacePizza" target="_blank">
+                    <div class="btn btn-success contact">Twitter</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/joesplacearlington/" target="_blank">
+                    <div class="btn btn-warning contact">Instagram</div>
+                </a>
+            </li>
+        </ul>
+        <h5>Email</h5>
+        <ul class="contact-list">
+            <li>
+                <a href="mailto:joe@joesplacepizzaandpasta.com">
+                    <div class="btn btn-danger contact">Click Here to Send Us an Email</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

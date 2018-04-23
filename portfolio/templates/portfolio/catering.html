@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Joe's Place Pizza and Pasta</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../static/css/portfolio.css" type="text/css"/>
+</head>
+<body>
+<h1 id="title">Joe's Place Pizza and Pasta</h1>
+
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+
+            <!-- Collapsed Hamburger -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target=".navbar-collapse">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-center">
+                <li class="nav-item"><a href="{% url 'portfolio:home'%}">Home</a></li>
+                <li class="nav-item"><a href="{% url 'portfolio:menu'%}">Menu</a></li>
+                <li class="nav-item"><a href="{% url 'portfolio:specials'%}">Specials</a></li>
+                <li class="active nav-item"><a href="{% url 'portfolio:catering'%}">Catering</a></li>
+                <li class="nav-item"><a href="{% url 'portfolio:about_us'%}">About Us</a></li>
+                <li class="nav-item"><a href="{% url 'portfolio:contact_us'%}">Contact Us</a></li>
+                <li class="nav-item"><a href="{% url 'portfolio:events'%}">Fundraisers & Events</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<h2 class="page-header">Catering</h2>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title"></h3>
+    </div>
+    <div class="panel-body">
+        <p class="catering-desc">
+            Joe's Place offers a variety of catering options for your next event. Let us meet your catering needs by
+            providing delicious, authentic Italian pastas, entrees and dessert at your next event!
+        </p>
+        <p class="catering-desc">
+            See our list of catering food options below.
+            <a href="{% url 'portfolio:contact_us'%}">Contact Us</a>
+            if you have any questions or if you'd like to place an order.
+        </p>
+        <table id="catering-menu">
+            <tr>
+                <th colspan="2">Pasta</th>
+                <th>1/2 Tray (9 Servings)</th>
+                <th>Full Tray (18 Servings) </th>
+            </tr>
+            <tr>
+                <td>Penne Tomato</td>
+                <td>Penne pasta with zesty tomato sauce	</td>
+                <td>$40</td>
+                <td>$80</td>
+            </tr>
+            <tr>
+                <td>Penne Meat</td>
+                <td>Penne pasta with our famous meat sauce</td>
+                <td>$40</td>
+                <td>$80</td>
+            </tr>
+            <tr>
+                <td>Penne Alfredo</td>
+                <td>Penne pasta with creamy alfredo sauce</td>
+                <td>$45</td>
+                <td>$85</td>
+            </tr>
+            <tr>
+                <td>Penne Pesto</td>
+                <td>Penne pasta with fresh basil, parsley, garlic, olive oil, parmesan and pine nuts</td>
+                <td>$45</td>
+                <td>$85</td>
+            </tr>
+            <tr>
+                <td>Baked Ziti</td>
+                <td>Penne pasta baked with tomato sauce, ricotta and mozzarella cheese</td>
+                <td>$50</td>
+                <td>$95</td>
+            </tr>
+            <tr>
+                <td>Lasagna (Full Tray Only)</td>
+                <td>Ruffle pasta baked with meat sauce, ricotta and mozzarella cheese</td>
+                <td></td>
+                <td>$95</td>
+            </tr>
+            <tr>
+                <td>Pasta Forno (New)</td>
+                <td>Anellini pasta and our zesty meat sauce baked with mozzarella and parmesan cheese</td>
+                <td>$40</td>
+                <td>$80</td>
+            </tr>
+             <tr>
+                <th colspan="2">Entrees</th>
+                <th></th>
+                <th>Full Tray (9 Servings)</th>
+            </tr>
+            <tr>
+                <td>Eggplant Parmigiana</td>
+                <td>Sautéed breaded eggplant cutlet baked with tomato sauce and mozzarella	</td>
+                <td></td>
+                <td>$75</td>
+            </tr>
+            <tr>
+                <td>Chicken Parmigiana</td>
+                <td>Sautéed breaded chicken cutlet baked with tomato sauce and mozzarella	</td>
+                <td></td>
+                <td>$85</td>
+            </tr>
+            <tr>
+                <td>Veal Parmigiana</td>
+                <td>Sautéed breaded veal cutlet baked with tomato sauce and mozzarella	</td>
+                <td></td>
+                <td>$95</td>
+            </tr>
+            <tr>
+                <td>Roasted Chicken (25 pieces)</td>
+                <td>Marinated chicken legs and thighs, oven baked (Same as in the buffet)	</td>
+                <td></td>
+                <td>$35</td>
+            </tr>
+            <tr>
+                <th colspan="4">
+                    Salad & Garlic Bread
+                </th>
+            </tr>
+            <tr>
+                <td>Garden Salad (25 portions)</td>
+                <td>Fresh lettuce, tomatoes, cucumbers, olives, carrots, green pepper and onion	</td>
+                <td></td>
+                <td>$35</td>
+            </tr>
+            <tr>
+                <td>Garlic Bread Sticks (28 pieces)</td>
+                <td>Made with our pizza dough topped with a garlic and cheese sauce (Same as in the buffet)</td>
+                <td></td>
+                <td>$15</td>
+            </tr>
+            <tr>
+                <th colspan="4">Dessert</th>
+            </tr>
+            <tr>
+                <td>Mini Cannoli</td>
+                <td>Made with our own homemade cannoli cream</td>
+                <td></td>
+                <td>$1</td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>

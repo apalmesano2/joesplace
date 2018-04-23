@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Joe's Place Pizza and Pasta</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../static/css/portfolio.css" type="text/css"/>
+</head>
+<body>
+<h1 id="title">Joe's Place Pizza and Pasta</h1>
+
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+
+            <!-- Collapsed Hamburger -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target=".navbar-collapse">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-center">
+                <li class="nav-item"><a href="{% url 'portfolio:home'%}">Home</a></li>
+                <li class="nav-item"><a href="{% url 'portfolio:menu'%}">Menu</a></li>
+                <li class="nav-item"><a href="{% url 'portfolio:specials'%}">Specials</a></li>
+                <li class="nav-item"><a href="{% url 'portfolio:catering'%}">Catering</a></li>
+                <li class="nav-item"><a href="{% url 'portfolio:about_us'%}">About Us</a></li>
+                <li class="nav-item"><a href="{% url 'portfolio:contact_us'%}">Contact Us</a></li>
+                <li class="active nav-item"><a href="{% url 'portfolio:events'%}">Fundraisers & Events</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<h2 class="page-header">Fundraisers and Events</h2>
+
+<div class="panel panel-default col-md-6">
+    <div class="panel-heading">
+        <h3 class="panel-title">Fundraisers</h3>
+    </div>
+    <div class="panel-body">
+        <h3>Pizza Night!</h3>
+        <p>Reserve a night and keep 15% from your group's purchases (including carry-outs)!</p>
+        <ol>
+            How it works:
+            <li><a href="{% url 'portfolio:contact_us'%}">Contact</a> a manager to schedule your event</li>
+            <li>Joe's Place Pizza and Pasta will donate <strong>15%</strong> of your group's purchases*
+                <br>(Supporters must mention the event at the time of purchase)
+            </li>
+            *Valid for dine-in and carry-out only
+        </ol>
+        <h3>Joe's Money</h3>
+        <p>Sell Joe's Money for $10 each and keep $5 for your group. Joe's Money works essentially like a gift card.</p>
+        <h3>School Fundraisers</h3>
+        <p>We have a local School Rewards Program!</p>
+        <p>When you dine in, tell us your school when you check out and Joe's will donate <strong>5%</strong> of your
+            total bill to your participating school!</p>
+        <p>We also participate in auctions and raffles and will donate items when possible.</p>
+        <h3>Other Ideas?</h3>
+        <p>We are open to new ideas and willing to discuss!
+        <br>
+        If you are interested in setting up a fundraising event with us, please fill ou the form below:</p>
+        <form method="POST" class="fund-form">{% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="save btn btn-default">Submit</button>
+        </form>
+    </div>
+</div>
+<div class="panel panel-default col-md-6">
+    <div class="panel-heading">
+        <h3 class="panel-title">Events</h3>
+    </div>
+    <div class="panel-body">
+        <h3>Pizza Making Classes!</h3>
+        <p>Joe's Place hosts pizza making classes for our local elementary schools where we teach the kids about the
+            history and science of pizza, as well as how to make it. There is no charge for this program and it takes
+            place at our Lee Highway location in Arlington.</p>
+        <p>School groups can schedule these events on Monday mornings from 9:30 to 11:00 am.</p>
+        <p>Upon arrival at Joe’s Place, the students will watch a short presentation about making pizza and have a
+            chance to practice some of their new skills! Besides learning the pizza-making process, the class will also
+            learn the chemistry behind the perfect pizza dough and the origins of the most popular food in the world.
+            Students come to the pizza making station in small groups, so everyone gets a turn.</p>
+        <p>After they experience the art of making pizza, Joe's Place will provide lunch, which of course is our
+            delicious pizza!</p>
+        <p>Joe's Place is proud to support our students and schools, share our Italian heritage and be a part of our
+            great community.</p>
+        <p><a href="mailto:joesplacearlington@gmail.com">Send us an email</a> for more information</p>
+        <h3>Upcoming Events</h3>
+        <h4>Old Bust Head Brewery Beer Fest</h4>
+        <h5 class="date-time-event">Friday, April 13: 5:30-7:30pm</h5>
+        <p>Join us for an Old Bust Head Brewery Beer Fest Happy Hour! This local, veteran-owned brewery in Warrenton,
+            VA will feature its Chukker Czech Pils and Caramel Macchiato Stout on draft, and Wild Cat English style IPA
+            and Bust Head English Pale Ale in 12 oz. bottles.</p>
+        <p>Celebrate the final return of warmer weather at our Beer Fest Happy Hour!</p>
+        <h5 class="date-time-event">Stay tuned for more events coming soon!</h5>
+    </div>
+</div>
+</body>
+</html>
