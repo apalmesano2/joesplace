@@ -12,61 +12,46 @@
             crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../../static/css/portfolio.css" type="text/css"/>
 </head>
-<body>
+<body id="home-body">
 <h1 id="title">Joe's Place Pizza and Pasta</h1>
-<table class="home-table">
-    <tr>
-        <td>
-            <div class="button-container">
-                <a href="{% url 'portfolio:menu'%}">
-                    <div class="btn btn-danger home-btn">Menu</div>
-                </a>
-            </div>
-        </td>
-        <td>
-            <div class="button-container">
-                <a href="{% url 'portfolio:specials'%}">
-                    <div class="btn btn-danger home-btn">Specials</div>
-                </a>
-            </div>
-        </td>
-        <td>
-            <div class="button-container">
-                <a href="{% url 'portfolio:catering'%}">
-                    <div class="btn btn-danger home-btn">Catering</div>
-                </a>
-            </div>
-        </td>
-    </tr>
-</table>
-<table class="home-table">
-    <tr>
-        <td colspan="1.5">
-            <div class="button-container">
-                <a href="{% url 'portfolio:contact_us'%}">
-                    <div class="btn btn-danger home-btn">Contact Us</div>
-                </a>
-            </div>
-        </td>
-        <td colspan="1.5">
-            <div class="button-container">
-                <a href="{% url 'portfolio:about_us' %}">
-                    <div class="btn btn-danger home-btn">About Us</div>
-                </a>
-            </div>
-        </td>
-    </tr>
-</table>
-<table class="home-table">
-    <tr>
-        <td colspan="3">
-            <div class="button-container">
-                <a href="{% url 'portfolio:events'%}">
-                    <div class="btn btn-danger home-btn">Fundraisers & Events</div>
-                </a>
-            </div>
-        </td>
-    </tr>
-</table>
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-md-4 parent">
+            <a href="{% url 'portfolio:menu'%}" class="centered-home-btn">
+                <div class="btn btn-danger home-btn">Menu</div>
+            </a>
+        </div>
+        <div class="col-md-4 parent">
+            <a href="{% url 'portfolio:specials'%}" class="centered-home-btn">
+                <div class="btn btn-danger home-btn">Specials</div>
+            </a>
+        </div>
+        <div class="col-md-4 parent">
+            <a href="{% url 'portfolio:catering'%}" class="centered-home-btn">
+                <div class="btn btn-danger home-btn">Catering</div>
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 parent">
+            <a href="{% url 'portfolio:contact_us'%}" class="centered-home-btn">
+                <div class="btn btn-danger home-btn">Contact Us</div>
+            </a>
+        </div>
+
+        <div class="col-md-4 parent">
+            <a href="{% url 'portfolio:about_us' %}" class="centered-home-btn">
+                <div class="btn btn-danger home-btn">About Us</div>
+            </a>
+        </div>
+        <div class="col-md-4 parent">
+            <a href="{% url 'portfolio:events'%}" class="centered-home-btn">
+                <div class="btn btn-danger home-btn">Fundraisers & Events</div>
+            </a>
+        </div>
+
+    </div>
+</div>
 </body>
 </html>

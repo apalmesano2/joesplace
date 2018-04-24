@@ -109,3 +109,17 @@ h4, h5 {
 .thanks {
     margin: auto;
 }
+
+.centered-home-btn {
+    margin: auto;
+}
+
+.parent {
+    text-align: center;
+    margin: 25px auto;
+}
+
+#home-body {
+    background-size: 100%;
+    background-image: url("../images/home_background.jpg");
+}
